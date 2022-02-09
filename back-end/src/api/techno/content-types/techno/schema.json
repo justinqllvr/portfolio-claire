@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technos",
+  "info": {
+    "singularName": "techno",
+    "pluralName": "technos",
+    "displayName": "technos"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "techno_01": {
+      "type": "string"
+    },
+    "techno_02": {
+      "type": "string"
+    },
+    "techno_03": {
+      "type": "string"
+    },
+    "techno_04": {
+      "type": "string"
+    },
+    "techno_05": {
+      "type": "string"
+    },
+    "techno_06": {
+      "type": "string"
+    },
+    "techno_07": {
+      "type": "string"
+    },
+    "techno_08": {
+      "type": "string"
+    },
+    "techno_09": {
+      "type": "string"
+    }
+  }
+}
