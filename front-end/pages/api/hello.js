@@ -1,5 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+const fetchProjects = async () => {
+  const res = await fetch('http://localhost:1337/api/projets')
+  const reponse = await res.json()
+  return reponse.data
 }
+
+export default fetchProjects;
