@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'ABC-Regular';
+    src: url('../assets/fonts/ABC/ABCWhyteInktrap-Regular-Trial.otf');
+  }
+
+@font-face {
+    font-family: 'ABC-Bold';
+    src: url('../assets/fonts/ABC/ABCWhyteInktrap-Bold-Trial.otf');
+  }
+
+  @font-face {
+    font-family: 'Syne-Regular';
+    src: url('../assets/fonts/Syne/Syne-Regular.ttf');
+  }
+  
+.d1 {
+    font-family: 'ABC-Regular';
+    font-size: 140px;
+    line-height: 110px;
+  }
+
+.d2 {
+    font-family: 'ABC-Regular';
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.d3 {
+    font-family: 'ABC-Regular';
+    font-size: 45px;
+    line-height: 50px;
+}
+
+h1 {
+    font-family: 'ABC-Bold';
+    font-size: 60px;
+    line-height: 80px;
+}
+
+h2 {
+    font-family: 'ABC-Bold';
+    font-size: 50px;
+    line-height: 80px;
+}
+
+h3 {
+    font-family: 'ABC-Bold';
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.sous-titre {
+    font-family: 'Syne-Regular';
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.p-l {
+    font-family: 'Syne-Regular';
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.p {
+    font-family: 'Syne-Regular';
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.p-s {
+    font-family: 'Syne-Regular';
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.mail {
+    font-family: 'Syne-Regular';
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.label .rubrique {
+    font-family: 'Syne-Regular';
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.text-button {
+    font-family: 'Syne-Regular';
+    font-size: 18px;
+    line-height: 24px;
+}
