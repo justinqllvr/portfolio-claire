@@ -8,7 +8,7 @@ import fetchProjects from "./api/hello";
 
 export default function Home() {
   console.log("i am on the client non ? ");
-  const data = fetchProjects();
+  const data = await fetchProjects();
   console.log(data);
   return (
     <>
