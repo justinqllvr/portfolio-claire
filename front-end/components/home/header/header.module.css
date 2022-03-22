@@ -1,0 +1,21 @@
+
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.align {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5vh;
+}
+
+
+.graphic {
+    margin-bottom: 25vh;
+}
+
+.parag {
+    max-width: 27.3vw;
+}

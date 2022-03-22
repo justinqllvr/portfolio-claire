@@ -2,8 +2,8 @@
 
 const fetchProjects = async () => {
   const res = await fetch('http://localhost:1337/api/projets')
-  const reponse = await res.json()
-  return reponse.data
+  const response = await res.json()
+  return response.data
 }
 
 export default fetchProjects;

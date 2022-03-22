@@ -1,0 +1,15 @@
+.nav {
+    height: 11.7vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 11vh;
+}
+
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
