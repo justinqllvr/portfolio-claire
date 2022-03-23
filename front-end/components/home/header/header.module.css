@@ -13,9 +13,16 @@
 
 
 .graphic {
-    margin-bottom: 25vh;
+    margin-bottom: 20vh;
 }
 
 .parag {
     max-width: 27.3vw;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }

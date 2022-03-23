@@ -1,37 +1,76 @@
 import React from "react";
 import styles from "./footer.module.css";
+import Image from "next/image";
+import arrow from "../../public/assets/svg/arrow24px-24px.svg";
+import instagram from "../../public/assets/svg/instagram.svg";
+import linkedin from "../../public/assets/svg/linkedin.svg";
+import behance from "../../public/assets/svg/behance.svg";
+import twitter from "../../public/assets/svg/twitter.svg";
 
 export default function Footer() {
   return (
     <div className={styles.container}>
       <div className={styles.flexContainer}>
         <div className={styles.left}>
-          <h1>Want to discuss about a new project ?</h1>
-          <p className={`p ${styles.parag}`}>
+          <div className="d3">Want to <br></br>discuss about <br></br> a new project ?</div> 
+          <div className={`p ${styles.parag}`}>
             Feel free to reach out if you wanna collaborate with me or simply
             have a chat
-          </p>
+          </div>
         </div>
         <div className={styles.right}>
           <div className={styles.mail}>
             <div className="mail">CLAIRERIEUSSET.PRO@GMAIL.COM</div>
-            <img></img>
+            <Image
+              src={arrow}
+              width={24}
+              height={24}
+              layout="intrinsic"
+              alt="arrow"
+            ></Image>
           </div>
           <div className={`label ${styles.reseaux}`}>
             <div>
-              <img></img>
+              <Image
+                src={instagram}
+                width={24}
+                height={24}
+                layout="intrinsic"
+                alt="arrow"
+              ></Image>
               <a>Instagram</a>
             </div>
             <div>
-              <img></img>
+              <Image
+                src={linkedin}
+                width={24}
+                height={24}
+                layout="intrinsic"
+                alt="arrow"
+              ></Image>
+
               <a>Linkedin</a>
             </div>
             <div>
-              <img></img>
+              <Image
+                src={twitter}
+                width={24}
+                height={24}
+                layout="intrinsic"
+                alt="arrow"
+              ></Image>
+
               <a>Twitter</a>
             </div>
             <div>
-              <img></img>
+              <Image
+                src={behance}
+                width={24}
+                height={24}
+                layout="intrinsic"
+                alt="arrow"
+              ></Image>
+
               <a>Behance</a>
             </div>
           </div>

@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'ABC-Regular';
-    src: url('../assets/fonts/ABC/ABCWhyteInktrap-Regular-Trial.otf');
+    src: url('../public/assets/fonts/ABC/ABCWhyteInktrap-Regular-Trial.otf');
   }
 
 @font-face {
     font-family: 'ABC-Bold';
-    src: url('../assets/fonts/ABC/ABCWhyteInktrap-Bold-Trial.otf');
+    src: url('../public/assets/fonts/ABC/ABCWhyteInktrap-Bold-Trial.otf');
   }
 
   @font-face {
     font-family: 'Syne-Regular';
-    src: url('../assets/fonts/Syne/Syne-Regular.ttf');
+    src: url('../public/assets/fonts/Syne/Syne-Regular.ttf');
   }
   
 .d1 {
@@ -27,8 +27,8 @@
 
 .d3 {
     font-family: 'ABC-Regular';
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 70px;
+    line-height: 90px;
 }
 
 h1 {
