@@ -30,7 +30,8 @@
 .parag {
   width: 50%;
   margin: 0;
-  float: right;
+  margin-right: 10px;
+margin-left: auto;
 }
 
 .mail {

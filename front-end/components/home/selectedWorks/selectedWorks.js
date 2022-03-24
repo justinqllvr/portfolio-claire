@@ -8,6 +8,8 @@ export default function SelectedWorks({ projects }) {
 
   
   useEffect(() => {
+  console.log(projects)
+
     const containerSelectedWorks = document.getElementById("containerSelectedWorks");
     containerSelectedWorks.style.height = `${2 * 100}vh`;
     // gsap.to(containerSelectedWorks, {
@@ -38,7 +40,7 @@ export default function SelectedWorks({ projects }) {
     });
 
   
-  }, []);
+  }, [projects]);
 
   return (
     <div id="containerSelectedWorks" className={styles.container}>
@@ -47,11 +49,4 @@ export default function SelectedWorks({ projects }) {
   );
 }
 
-export async function getStaticProps() {
-  const res = await fetch("http://localhost:1337/api/projets");
-  const projects = await res.json();
 
-  return {
-    props: { projects },
-  };
-}
