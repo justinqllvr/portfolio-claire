@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_projets_list_roles",
+  "info": {
+    "displayName": "role",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "string"
+    }
+  }
+}

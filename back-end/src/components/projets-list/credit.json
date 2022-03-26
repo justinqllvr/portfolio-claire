@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_projets_list_credits",
+  "info": {
+    "displayName": "Credit",
+    "icon": "diagnoses"
+  },
+  "options": {},
+  "attributes": {
+    "credit": {
+      "type": "string"
+    },
+    "credit_lien": {
+      "type": "string"
+    }
+  }
+}

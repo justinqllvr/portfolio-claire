@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_projets_list_technos",
+  "info": {
+    "displayName": "Technos",
+    "icon": "broadcast-tower"
+  },
+  "options": {},
+  "attributes": {
+    "technos": {
+      "type": "string"
+    }
+  }
+}

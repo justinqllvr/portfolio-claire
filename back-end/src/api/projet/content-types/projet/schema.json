@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true
     },
@@ -26,9 +26,6 @@
       "type": "text",
       "required": true
     },
-    "description_secondary": {
-      "type": "text"
-    },
     "link": {
       "type": "string"
     },
@@ -36,25 +33,52 @@
       "type": "boolean",
       "default": false
     },
-    "image": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::image.image"
+    "galerie": {
+      "type": "dynamiczone",
+      "components": [
+        "galerie.one-media",
+        "galerie.two-column",
+        "galerie.three-column",
+        "galerie.paragraphe"
+      ]
     },
-    "fonction": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::fonction.fonction"
+    "technos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projets-list.technos"
     },
-    "techno": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::techno.techno"
+    "cover_horizontal": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "cover_vertical": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "credit": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::credit.credit"
+      "type": "component",
+      "repeatable": true,
+      "component": "projets-list.credit"
+    },
+    "client": {
+      "type": "string"
+    },
+    "role": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projets-list.role"
     }
   }
 }

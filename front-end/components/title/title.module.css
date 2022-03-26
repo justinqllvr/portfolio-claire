@@ -1,0 +1,7 @@
+.titleContainer  {
+    display: flex;
+}
+
+.titleContainer h1, .titleContainer h2 {
+    margin-left: 3vw;
+}

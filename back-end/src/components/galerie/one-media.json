@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_one_media_one_medias",
+  "info": {
+    "displayName": "OneMedia",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cover": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  }
+}

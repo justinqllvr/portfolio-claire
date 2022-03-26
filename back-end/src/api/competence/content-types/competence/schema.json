@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "competences",
+  "info": {
+    "singularName": "competence",
+    "pluralName": "competences",
+    "displayName": "Competences"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "competences": {
+      "type": "component",
+      "repeatable": true,
+      "component": "competence.competences"
+    }
+  }
+}

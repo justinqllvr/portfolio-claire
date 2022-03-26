@@ -1,52 +1,38 @@
 import React, { useEffect } from "react";
 import styles from "./selectedWorks.module.css";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
+import { getStrapiMedia } from "../../../lib/media";
+import Image from "next/image";
 
-export default function SelectedWorks({ projects }) {
-  gsap.registerPlugin(ScrollTrigger);
+export default function SelectedWorks({ projets }) {
 
-  
   useEffect(() => {
-  console.log(projects)
-
-    const containerSelectedWorks = document.getElementById("containerSelectedWorks");
-    containerSelectedWorks.style.height = `${2 * 100}vh`;
-    // gsap.to(containerSelectedWorks, {
-    //   scrollTrigger: {
-    //     trigger: "#containerSelectedWorks",
-    //     start: "0% 0%",
-    //     pin: true,
-    //     end: "200% 200%",
-    //   }
-    // })
-    
-    const isTriggered = () => {
-      console.log("trigger")
-    }
-    const tween = gsap.to(".containerSelectedWorks", {
-      xPercent: -200,
-      scrollTrigger: {
-        trigger: ".containerSelectedWorks",
-        pin: true,
-        start: "top top",
-        scrub: 1,
-        end: "2000",
-        onEnter: ({progress, direction, isActive}) => console.log(progress, direction, isActive),
-        onUpdate: () => {
-          isTriggered()
-        },
-      },
-    });
-
-  
-  }, [projects]);
+    document.getElementById("containerSelectedWorks").style.width = `${
+      projets.length * 60
+    }%`;
+  }, [projets]);
 
   return (
     <div id="containerSelectedWorks" className={styles.container}>
-      selected-works
+      <h3>SelectedWorks ({projets && projets.length})</h3>
+      <div className={styles.projectsContainer}>
+        {projets &&
+          projets.map((projet, i) => (
+            <div className={styles.projet} key={i}>
+              <Image
+                layout="intrinsic"
+                width={1500}
+                height={1000}
+                objectFit="contain"
+                src={getStrapiMedia(projet.attributes.cover_horizontal)}
+              />
+              <Link href={`/projets/${projet.id}`}>
+                {projet.attributes.title}
+              </Link>
+              {projet.attributes.date}
+            </div>
+          ))}
+      </div>
     </div>
   );
 }
-
-

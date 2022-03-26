@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_galerie_paragraphes",
+  "info": {
+    "displayName": "Paragraphe",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "paragraphe": {
+      "type": "text"
+    }
+  }
+}

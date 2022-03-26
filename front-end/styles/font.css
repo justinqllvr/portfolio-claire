@@ -32,15 +32,16 @@
 }
 
 h1 {
-    font-family: 'ABC-Bold';
+    font-family: 'ABC-Regular';
     font-size: 60px;
-    line-height: 80px;
+    line-height: 110px;
+    margin: 0;
 }
 
 h2 {
     font-family: 'ABC-Bold';
     font-size: 50px;
-    line-height: 80px;
+    line-height: 110px;
 }
 
 h3 {

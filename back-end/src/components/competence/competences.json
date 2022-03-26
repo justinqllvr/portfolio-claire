@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_competence_competences",
+  "info": {
+    "displayName": "competences",
+    "icon": "arrow-alt-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "competence": {
+      "type": "string"
+    }
+  }
+}

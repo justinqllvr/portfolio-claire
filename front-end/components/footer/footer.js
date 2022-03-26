@@ -9,7 +9,7 @@ import twitter from "../../public/assets/svg/twitter.svg";
 
 export default function Footer() {
   return (
-    <div className={styles.container}>
+    <div id="footer" className={styles.container}>
       <div className={styles.flexContainer}>
         <div className={styles.left}>
           <div className="d3">Want to <br></br>discuss about <br></br> a new project ?</div> 

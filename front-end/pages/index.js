@@ -1,45 +1,56 @@
-import Head from "next/head";
-import Image from "next/image";
 import { useEffect } from "react";
 import Footer from "../components/footer/footer";
 import Header from "../components/home/header/header";
 import SelectedWorks from "../components/home/selectedWorks/selectedWorks";
-import styles from "../styles/Home.module.css";
-import fetchProjects from "./api/hello";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import gsap from "gsap";
+import { fetchAPI } from "../lib/api";
 
-export default function Home({projects}) {
-  
+export default function Home({ projets }) {
   useEffect(() => {
-    console.log(projects)
-  
-  }, [projects])
-  
+    document.querySelector(".hozizontal");
+    console.log(document.querySelector("#footer").offsetTop);
+    console.log(document.querySelector("#containerSelectedWorks"));
+    console.log(projets.length);
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const isTriggered = () => {
+      console.log("trigger");
+    };
+    const tween = gsap.to(".horizontal", {
+      xPercent: -(19 + (projets.length - 2) * 60),
+      scrollTrigger: {
+        trigger: ".horizontal",
+        pin: true,
+        start: "top top",
+        scrub: 1,
+        end: "+=" + document.querySelector("#footer").offsetTop,
+        onEnter: () => console.log("entrer dans la section"),
+        onLeave: () => console.log("sortie dans la section"),
+      },
+    });
+  }, [projets]);
+
   return (
-    <>
+    <div>
       <Header />
-      <SelectedWorks />
-      <Footer />
-      <div>
-        {projects && projects.data.map(project => (
-          <div>{project.attributes.name}</div>
-        ))}
+      <div className="horizontal">
+        <SelectedWorks projets={projets} />
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:1337/api/projets", {
-    method: 'GET',
-    headers: {
-      // Authorization: `Bearer ${API_TOKEN}`,
-      'Content-Type': 'application/json',
-    }});
-  console.log("first")
-  console.log(res)
-  const projects = await res.json();
+  // Run API calls in parallel
+  const projetsRes = await fetchAPI("/projets", { populate: "*" });
 
   return {
-    props: { projects: projects },
+    props: {
+      projets: projetsRes.data,
+    },
+    revalidate: 1,
   };
 }
