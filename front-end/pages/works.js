@@ -12,7 +12,7 @@ function works({ projets }) {
       <Title title={"ALL MY WORKS"} size="h1" />
       <div style={{display: "flex", flexWrap: "wrap"}}>
         {projets.map((projet, i) => (
-          <WorkCard projet={projet} index={i} />
+          <WorkCard projet={projet} index={i} key={i} />
         ))}
       </div>
       <Footer />
