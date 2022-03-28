@@ -19,7 +19,6 @@ export function getStrapiURL(path = "") {
  * @returns Parsed API call response
  */
 export async function fetchAPI(path, urlParamsObject = {}, options = {}) {
-
   // Merge default and user options
   const mergedOptions = {
     headers: {

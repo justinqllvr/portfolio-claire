@@ -9,9 +9,7 @@ import { fetchAPI } from "../lib/api";
 export default function Home({ projets }) {
   useEffect(() => {
     document.querySelector(".hozizontal");
-    console.log(document.querySelector("#footer").offsetTop);
-    console.log(document.querySelector("#containerSelectedWorks"));
-    console.log(projets.length);
+   
 
     gsap.registerPlugin(ScrollTrigger);
 

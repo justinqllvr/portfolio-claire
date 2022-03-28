@@ -1,20 +1,36 @@
 import React from "react";
 import Footer from "../components/footer/footer";
 import Nav from "../components/nav/nav";
-import Title from "../components/title/title";
+import Layout from "../components/utils/layout";
+import Title from "../components/utils/title";
 import WorkCard from "../components/works/workCard";
 import { fetchAPI } from "../lib/api";
 
 function works({ projets }) {
   return (
     <div>
-      <Nav />
-      <Title title={"ALL MY WORKS"} size="h1" />
-      <div style={{display: "flex", flexWrap: "wrap"}}>
-        {projets.map((projet, i) => (
-          <WorkCard projet={projet} index={i} key={i} />
-        ))}
-      </div>
+      <Layout>
+        <Nav />
+        <Title title={"ALL MY WORKS"} size="h1" />
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            marginLeft: "3vw",
+            marginRight: "3vw",
+          }}
+        >
+          {projets.map((projet, i) => (
+            <WorkCard
+              projet={projet}
+              index={i}
+              key={i}
+              component={"work-card"}
+            />
+          ))}
+        </div>
+      </Layout>
+
       <Footer />
     </div>
   );

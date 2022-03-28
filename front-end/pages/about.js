@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../components/nav/nav";
 import Image from "next/image";
-import Title from "../components/title/title";
+import Title from "../components/utils/title";
 import Footer from "../components/footer/footer";
 
 function about() {

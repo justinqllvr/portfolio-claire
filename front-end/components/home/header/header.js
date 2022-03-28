@@ -3,10 +3,12 @@ import Nav from "../../nav/nav";
 import Image from "next/image";
 import styles from "./header.module.css";
 import scrollDown from "../../../public/assets/svg/scroll_down.svg";
+import Layout from "../../utils/layout";
 
 export default function Header() {
   return (
-    <header className={styles.header}>
+    <Layout>
+<header className={styles.header}>
       <Nav />
       <div className={styles.align}>
         <span className={`p`}>Welcome to my portfolio</span>
@@ -29,5 +31,7 @@ export default function Header() {
         ></Image>
       </div>
     </header>
+    </Layout>
+    
   );
 }

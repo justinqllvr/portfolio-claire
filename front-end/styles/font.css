@@ -33,6 +33,7 @@
 
 h1 {
     font-family: 'ABC-Regular';
+    font-weight: 400;
     font-size: 60px;
     line-height: 110px;
     margin: 0;
