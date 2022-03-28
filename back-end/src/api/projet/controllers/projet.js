@@ -4,8 +4,6 @@
  *  projet controller
  */
 
-const schema = require("../content-types/projet/schema.json");
-const createPopulatedController = require("../../../helpers/populate");
+const { createCoreController } = require('@strapi/strapi').factories;
 
-
-module.exports = createPopulatedController('api::projet.projet', schema);
+module.exports = createCoreController('api::projet.projet');
