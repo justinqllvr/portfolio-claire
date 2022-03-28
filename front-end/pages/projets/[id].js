@@ -97,11 +97,7 @@ export async function getStaticProps({ params }) {
     filters: {
       id: params.id,
     },
-    populate: {
-      galerie: {
-        populate: {body: {populate: "*"}},
-      },
-    }
+    populate: "*",
   });
 
   return {
