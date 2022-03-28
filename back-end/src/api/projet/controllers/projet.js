@@ -3,7 +3,9 @@
 /**
  *  projet controller
  */
+ const collectionType = 'projet'
 
-const { createCoreController } = require('@strapi/strapi').factories;
-
-module.exports = createCoreController('api::projet.projet');
+ const schema = require(`../content-types/${collectionType}/schema.json`);
+ const createPopulatedController = require("../../../helpers/populate");
+ 
+ module.exports = createPopulatedController(`api::${collectionType}.${collectionType}`, schema);
