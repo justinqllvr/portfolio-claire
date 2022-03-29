@@ -29,7 +29,6 @@ const populateAttribute = ({ components }) => {
 }
 
 const getPopulateFromSchema = function (schema) {
-  // console.log('schema', schema)
   return Object.keys(schema.attributes).reduce((currentValue, current) => {
     const attribute = schema.attributes[current]
     if (!['dynamiczone', 'component'].includes(attribute.type)) {
@@ -44,7 +43,6 @@ const getPopulateFromSchema = function (schema) {
 
 function createPopulatedController(uid, schema) {
   return createCoreController(uid, () => {
-    // console.log(schema.collectionName, getPopulateFromSchema(schema))
     return {
       async find(ctx) {
         // deeply populate all attributes with ?populate=*, else retain vanilla functionality

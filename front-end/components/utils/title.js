@@ -15,7 +15,7 @@ function Title({ title, size }) {
             layout="intrinsic"
             alt="arrow"
           ></Image>
-          <h1>{title}</h1>
+          <h1>{title.toUpperCase()}</h1>
         </div>
       ) : (
         <div className={styles.titleContainer}>
@@ -26,7 +26,7 @@ function Title({ title, size }) {
             layout="intrinsic"
             alt="arrow"
           ></Image>
-          <h2>{title}</h2>
+          <h2>{title.toUpperCase()}</h2>
         </div>
       )}
     </div>

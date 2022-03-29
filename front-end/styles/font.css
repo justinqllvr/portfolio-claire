@@ -35,7 +35,6 @@ h1 {
     font-family: 'ABC-Regular';
     font-weight: 400;
     font-size: 60px;
-    line-height: 110px;
     margin: 0;
 }
 
@@ -43,12 +42,15 @@ h2 {
     font-family: 'ABC-Bold';
     font-size: 50px;
     line-height: 110px;
+    margin: 0;
 }
 
 h3 {
     font-family: 'ABC-Bold';
     font-size: 20px;
     line-height: 24px;
+    font-weight: 700;
+    margin: 0;
 }
 
 .sous-titre {
@@ -61,6 +63,7 @@ h3 {
     font-family: 'Syne-Regular';
     font-size: 25px;
     line-height: 40px;
+    font-weight: 400;
 }
 
 .p {
@@ -81,7 +84,7 @@ h3 {
     line-height: 24px;
 }
 
-.label .rubrique {
+.label, .rubrique {
     font-family: 'Syne-Regular';
     font-size: 14px;
     line-height: 24px;
