@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./title.module.css";
 import React from "react";
-import arrow from "../../public/assets/svg/arrow39px39px.svg";
+import arrow from "../public/assets/svg/arrow39px39px.svg";
 
 function Title({ title, size }) {
   return (
