@@ -1,14 +1,40 @@
 .nav {
-    height: 11.7vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 11.7vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .links {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
 }
 
+.links > a {
+  overflow: hidden;
+  display: inline;
+  position: relative;
+}
+
+.links > a:after {
+  content: "a";
+  position: absolute;
+  left: 0;
+  bottom: 1vh;
+  width: 0;
+  background: #201b2f;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.links > a:hover:after,
+.links > a:focus:after,
+.links > a:active:after {
+  left: 0;
+  right: auto;
+  width: 105%;
+}
