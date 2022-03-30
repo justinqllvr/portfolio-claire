@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./title.module.css";
 import React from "react";
-import Arrow from "../../public/assets/svg/arrow39px39px";
+import arrow from "../../public/assets/svg/arrow39px39px";
 
 function Title({ title, size }) {
   return (
@@ -9,7 +9,7 @@ function Title({ title, size }) {
       {size == "h1" ? (
         <div className={styles.titleContainer}>
           <Image
-            src={Arrow}
+            src={arrow}
             width={39}
             height={39}
             layout="intrinsic"
