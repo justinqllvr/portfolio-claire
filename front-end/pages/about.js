@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./about.module.css";
 import Nav from "../components/nav/nav";
 import Image from "next/image";
-import arrow from "../public/assets/svg/arrow12px-12px.svg";
+import arrow from "../public/assets/svg/arrow12px12px.svg";
 import Title from "../components/utils/title";
 import Footer from "../components/footer/footer";
 import claire from "../public/assets/png/claire.png";

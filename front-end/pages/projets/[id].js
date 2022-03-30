@@ -11,7 +11,7 @@ import { fetchAPI } from "../../lib/api";
 import OneMedia from "../../components/projet/oneMedia";
 import TwoColumn from "../../components/projet/twoColumn";
 import ThreeColumn from "../../components/projet/threeColumn";
-import arrow from "../../public/assets/svg/arrow12px-12px.svg";
+import arrow from "../../public/assets/svg/arrow12px12px.svg";
 import Paragraphe from "../../components/projet/paragraphe";
 
 const Projets = ({ projet }) => {
