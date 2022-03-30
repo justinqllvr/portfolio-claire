@@ -31,7 +31,7 @@ function about() {
                 ac viverra purus.{" "}
               </p>
               <button className={`p ${styles.resume}`}>
-                <a target={"_blank"} href={"/about"}>
+                <a  rel="noreferrer"  target={"_blank"} href={"/about"}>
                   EXPLORE MY RESUME
                 </a>
                 <div className={styles.resumeArrow}>

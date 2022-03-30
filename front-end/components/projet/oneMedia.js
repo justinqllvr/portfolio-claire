@@ -15,6 +15,7 @@ function OneMedia({ data }) {
         width={1440}
         height={900}
         src={getStrapiMedia(data.cover, option)}
+        alt="cover"
       />
     </div>
   );

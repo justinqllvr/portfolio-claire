@@ -16,6 +16,7 @@ function TwoColumn({ data }) {
           width={730}
           height={900}
           src={getStrapiMedia(data.column1, option)}
+          alt="left"
         />
       </div>
 
@@ -25,6 +26,7 @@ function TwoColumn({ data }) {
           width={730}
           height={900}
           src={getStrapiMedia(data.column2, option)}
+          alt="right"
         />
       </div>
     </div>

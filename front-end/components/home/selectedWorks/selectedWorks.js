@@ -26,6 +26,7 @@ export default function SelectedWorks({ projets }) {
                   width={836}
                   height={500}
                   src={getStrapiMedia(projet.attributes.cover_horizontal)}
+                  alt="cover"
                 />
                 <Link href={`/projets/${projet.id}`}>
                   <a className={`sous-titre ${styles.projetName}`}>

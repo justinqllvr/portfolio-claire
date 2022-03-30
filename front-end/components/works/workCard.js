@@ -5,17 +5,18 @@ import Image from "next/image";
 import styles from "./workCard.module.css";
 
 function WorkCard({ projet, index, component }) {
-  const numIsPair = (n) => {
-    if (n % 2 !== 0) {
-      document.querySelector(`#pair${n}`).style.marginTop = "15vh";
-      document.querySelector(`#pair${n}`).style.paddingLeft = "3vw";
-    } else {
-      document.querySelector(`#pair${n}`).style.paddingRight = "3vw";
-    }
-  };
+  
 
   useEffect(() => {
-    
+    const numIsPair = (n) => {
+      if (n % 2 !== 0) {
+        document.querySelector(`#pair${n}`).style.marginTop = "15vh";
+        document.querySelector(`#pair${n}`).style.paddingLeft = "3vw";
+      } else {
+        document.querySelector(`#pair${n}`).style.paddingRight = "3vw";
+      }
+    };
+
     if (component === "work-card") {
       numIsPair(index);
     }
@@ -32,12 +33,13 @@ function WorkCard({ projet, index, component }) {
             height={560}
             objectFit="contain"
             src={getStrapiMedia(projet.attributes.cover_vertical)}
+            alt="cover_vertical"
           />
         </div>
       </Link>
       <div>
-        {projet.attributes.role.map(({ role }) => (
-          <span className="label">{role.toUpperCase()} • </span>
+        {projet.attributes.role.map(({ role }, i) => (
+          <span className="label" key={i}>{role.toUpperCase()} • </span>
         ))}
       </div>
 

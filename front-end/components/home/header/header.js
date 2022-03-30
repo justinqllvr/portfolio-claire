@@ -15,7 +15,7 @@ export default function Header() {
           <span className={`p ${styles.welcomeText}`}>
             Welcome to my portfolio
           </span>
-          <span className={`d1 ${styles.name}`}>Claire Rieusset </span>
+          <span id="name" className={`d1 ${styles.name}`}>Claire Rieusset </span>
         </div>
         <div className={`d1 ${styles.graphic}`}>
           <span>Graphic Designer</span>
