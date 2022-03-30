@@ -27,7 +27,8 @@
 
 .d3 {
     font-family: 'ABC-Regular';
-    font-size: 70px;
+    font-size: 5vw;
+    font-weight: 400;
     line-height: 90px;
 }
 
@@ -80,7 +81,7 @@ h3 {
 
 .mail {
     font-family: 'Syne-Regular';
-    font-size: 30px;
+    font-size: 2vw;
     line-height: 24px;
 }
 

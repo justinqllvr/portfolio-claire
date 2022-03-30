@@ -25,16 +25,18 @@ export default function Footer() {
           <div className={styles.right}>
             <div className={styles.mail}>
               <div className="mail">CLAIRERIEUSSET.PRO@GMAIL.COM</div>
-              <Image
-                src={arrow}
-                width={24}
-                height={24}
-                layout="intrinsic"
-                alt="arrow"
-              ></Image>
+              <div className={styles.arrow}>
+                <Image
+                  src={arrow}
+                  width={24}
+                  height={24}
+                  // layout="intrinsic"
+                  alt="arrow"
+                ></Image>
+              </div>
             </div>
-            <div className={`label ${styles.reseaux}`}>
-              <div>
+            <div className={`label ${styles.reseauxList}`}>
+              <div className={styles.reseau}>
                 <Image
                   src={instagram}
                   width={24}
@@ -42,9 +44,9 @@ export default function Footer() {
                   layout="intrinsic"
                   alt="arrow"
                 ></Image>
-                <a>Instagram</a>
+                <a className={styles.reseauName}>Instagram</a>
               </div>
-              <div>
+              <div className={styles.reseau}>
                 <Image
                   src={linkedin}
                   width={24}
@@ -53,9 +55,9 @@ export default function Footer() {
                   alt="arrow"
                 ></Image>
 
-                <a>Linkedin</a>
+                <a className={styles.reseauName}>Linkedin</a>
               </div>
-              <div>
+              <div className={styles.reseau}>
                 <Image
                   src={twitter}
                   width={24}
@@ -64,9 +66,9 @@ export default function Footer() {
                   alt="arrow"
                 ></Image>
 
-                <a>Twitter</a>
+                <a className={styles.reseauName}>Twitter</a>
               </div>
-              <div>
+              <div className={styles.reseau}>
                 <Image
                   src={behance}
                   width={24}
@@ -75,7 +77,7 @@ export default function Footer() {
                   alt="arrow"
                 ></Image>
 
-                <a>Behance</a>
+                <a className={styles.reseauName}>Behance</a>
               </div>
             </div>
           </div>
