@@ -97,7 +97,17 @@ export async function getStaticProps({ params }) {
     filters: {
       id: params.id,
     },
-    populate: "*",
+    populate: {
+      galerie:{
+        populate: '*',
+      },
+      cover_vertical:{
+        populate: '*',
+      },
+      cover_horizontal:{
+        populate: '*',
+      },
+    },
   });
 
   return {

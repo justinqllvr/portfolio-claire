@@ -24,8 +24,6 @@ export default function Home({ projets }) {
         start: "top top",
         scrub: 1,
         end: "+=" + document.querySelector("#footer").offsetTop,
-        onEnter: () => console.log("entrer dans la section"),
-        onLeave: () => console.log("sortie dans la section"),
       },
     });
   }, [projets]);
