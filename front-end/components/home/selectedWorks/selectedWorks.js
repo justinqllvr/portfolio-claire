@@ -15,29 +15,29 @@ export default function SelectedWorks({ projets }) {
     <div id="containerSelectedWorks" className={styles.container}>
       <div className={styles.layout}>
         <h3 className={styles.title}>
-          SelectedWorks ({projets && projets.length})
+          SELECTED WORKS ({projets && projets.length})
         </h3>
         <div className={styles.projectsContainer}>
           {projets &&
             projets.map((projet, i) => (
-              <div className={styles.projet} key={i}>
-                <Image
-                  layout="intrinsic"
-                  width={836}
-                  height={500}
-                  src={getStrapiMedia(projet.attributes.cover_horizontal)}
-                  alt="cover"
-                />
-                <Link href={`/projets/${projet.id}`}>
-                  <a className={`sous-titre ${styles.projetName}`}>
-                    {projet.attributes.title}
-                  </a>
-                </Link>
-                <span className="p-s" style={{lineHeight: "5px"}}>
-                  {projet.attributes.date &&
-                    projet.attributes.date.split("-")[0]}
-                </span>
-              </div>
+              <Link key={i} href={`/projets/${projet.id}`}>
+                <a className={styles.projet} >
+                    <Image
+                      layout="intrinsic"
+                      width={900}
+                      height={650}
+                      src={getStrapiMedia(projet.attributes.cover_horizontal)}
+                      alt="cover"
+                    />
+                    <div className={`sous-titre ${styles.projetName}`}>
+                      {projet.attributes.title}
+                    </div>
+                    <span className="p-s" style={{ lineHeight: "5px" }}>
+                      {projet.attributes.date &&
+                        projet.attributes.date.split("-")[0]}
+                    </span>
+                </a>
+              </Link>
             ))}
         </div>
       </div>

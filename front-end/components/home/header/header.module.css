@@ -33,9 +33,15 @@
   animation-name: slidein;
 }
 
+.zindex {
+  z-index: 2;
+  position: relative;
+}
+.backgroundCircle {
+  position: absolute;
+  z-index: auto;
+}
 .name {
-  
-  animation-delay: 1s;
   animation-duration: 1s;
   transition: transform 1s cubic-bezier(0.4, 0, 0, 1);
   animation-name: slidein;

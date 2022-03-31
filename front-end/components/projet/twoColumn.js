@@ -13,8 +13,8 @@ function TwoColumn({ data }) {
       <div style={{ paddingRight: "1.5vw" }}>
         <Image
           layout="intrinsic"
-          width={730}
-          height={900}
+          width={973}
+          height={1200}
           src={getStrapiMedia(data.column1, option)}
           alt="left"
         />
@@ -23,8 +23,8 @@ function TwoColumn({ data }) {
       <div style={{ paddingLeft: "1.5vw" }}>
         <Image
           layout="intrinsic"
-          width={730}
-          height={900}
+          width={973}
+          height={1200}
           src={getStrapiMedia(data.column2, option)}
           alt="right"
         />

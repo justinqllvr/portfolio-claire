@@ -5,6 +5,21 @@
 }
 
 .image {
+  padding-bottom: 3vh;
   border-bottom: 1px solid black;
 }
 
+.roles {
+  color:#7A7C8C !important;
+  padding-top: 1.5vh;
+}
+
+.projet {
+  display: flex;
+  padding-top: 1.5vh;
+  justify-content: space-between;
+}
+
+.projetType {
+  padding-top: 1.5vh;
+}

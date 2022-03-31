@@ -4,8 +4,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 400;
 }
 
+.name {
+  display: flex;
+   justify-content: center;
+}
+
+.name>span {
+  margin-left: 1vw;
+}
 .links {
   width: 50%;
   display: flex;

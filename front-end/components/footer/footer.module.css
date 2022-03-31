@@ -24,13 +24,13 @@
   flex-direction: column;
   margin-bottom: 5vh;
   text-align: end;
-  width: 60%;
+  width: 50%;
 }
 
 .parag {
-  width: 40%;
+  width: 35%;
   margin: 0;
-  margin-right: 19vw;
+  margin-right: 15vw;
   margin-top: 5vh;
   margin-left: auto;
 }
@@ -51,6 +51,7 @@
 .reseau {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .reseauName {
@@ -72,7 +73,17 @@
 }
 
 .arrow {
-  /* margin-left: 2vw; */
-  height: auto;
-  width: auto;
+  margin-left: 2vw;
+  
+}
+
+.zindex {
+  position: relative;
+  z-index: 1;
+}
+.bottomCircle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
 }

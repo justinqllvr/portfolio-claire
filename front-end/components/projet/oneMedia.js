@@ -9,11 +9,11 @@ function OneMedia({ data }) {
   }, [data]);
 
   return (
-    <div style={{marginTop: "7vh"}}>
+    <div style={{marginTop: "7vh", textAlign: "center"}}>
       <Image
         layout="intrinsic"
-        width={1440}
-        height={900}
+        width={1900}
+        height={1200}
         src={getStrapiMedia(data.cover, option)}
         alt="cover"
       />
