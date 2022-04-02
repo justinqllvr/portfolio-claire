@@ -11,24 +11,29 @@ function works({ projets }) {
     <div>
       <Layout>
         <Nav />
-        <Title title={"ALL MY WORKS"} size="h1" />
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            marginLeft: "3vw",
-            marginRight: "3vw",
-          }}
-        >
-          {projets.map((projet, i) => (
-            <WorkCard
-              projet={projet}
-              index={i}
-              key={i}
-              component={"work-card"}
-            />
-          ))}
+        <div style={{marginTop: "7vh"}}>
+          <Title title={"ALL MY WORKS"} size="h1" />
         </div>
+
+        <Layout>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+              marginTop: "7vh",
+            }}
+          >
+            {projets.map((projet, i) => (
+              <WorkCard
+                projet={projet}
+                index={i}
+                key={i}
+                component={"work-card"}
+              />
+            ))}
+          </div>
+        </Layout>
       </Layout>
 
       <Footer />

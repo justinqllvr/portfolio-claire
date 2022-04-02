@@ -11,7 +11,7 @@ import { fetchAPI } from "../../lib/api";
 import OneMedia from "../../components/projet/oneMedia";
 import TwoColumn from "../../components/projet/twoColumn";
 import ThreeColumn from "../../components/projet/threeColumn";
-import arrow from "../../public/assets/svg/arrow12px-12px.svg";
+import arrow from "../../public/assets/svg/arrow12px12px.svg";
 import Paragraphe from "../../components/projet/paragraphe";
 
 const Projets = ({ projet }) => {
@@ -57,8 +57,8 @@ const Projets = ({ projet }) => {
               <div className={styles.innerRubrique}>
                 <h3>ROLES</h3>
                 <div className={styles.rubriqueList}>
-                  {projet.role.map(({ role }) => (
-                    <span className="rubrique">{role}</span>
+                  {projet.role.map(({ role }, i) => (
+                    <span key={i} className="rubrique">{role}</span>
                   ))}
                 </div>
               </div>
@@ -67,8 +67,8 @@ const Projets = ({ projet }) => {
               <div className={styles.innerRubrique}>
                 <h3>TECHNOLOGIES</h3>
                 <div className={styles.rubriqueList}>
-                  {projet.technos.map(({ technos }) => (
-                    <span className="rubrique">{technos}</span>
+                  {projet.technos.map(({ technos },i) => (
+                    <span key={i} className="rubrique">{technos}</span>
                   ))}
                 </div>
               </div>
@@ -77,8 +77,8 @@ const Projets = ({ projet }) => {
               <div className={styles.innerRubrique}>
                 <h3>TECHNOLOGIES</h3>
                 <div className={styles.rubriqueList}>
-                  {projet.credits.map(({ credits }) => (
-                    <a className="rubrique" href={credits_lien}>
+                  {projet.credits.map(({ credits },i) => (
+                    <a key={i} className="rubrique" href={credits_lien}>
                       {credits}
                     </a>
                   ))}
@@ -92,6 +92,7 @@ const Projets = ({ projet }) => {
               width={1000}
               height={630}
               src={getStrapiMedia(projet.cover_horizontal)}
+              alt="cover horizontal"
             />
           </div>
         </div>
@@ -99,15 +100,15 @@ const Projets = ({ projet }) => {
           <h3>/ DESCRIPTION</h3>
           <div className={styles.subDescriptionContainer}>
             {descriptionArray.length > 0 &&
-              descriptionArray.map((desc) => (
-                <p style={{ width: "30%" }} className="p-s">
+              descriptionArray.map((desc, i) => (
+                <p key={i} style={{ width: "30%" }} className="p-s">
                   {desc}
                 </p>
               ))}
           </div>
 
           <button className={`p ${styles.onlineLink}`}>
-            <a target={"_blank"} href={projet?.link}>
+            <a rel="noreferrer" target={"_blank"} href={projet?.link}>
               EXPERIENCE THE ONLINE VERSION
             </a>
             <div className={styles.onlineLinkArrow}>

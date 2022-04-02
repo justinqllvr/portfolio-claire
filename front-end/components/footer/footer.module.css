@@ -17,21 +17,22 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 50%;
 }
 
 .right {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5vh;
   text-align: end;
-  width: 40%;
+  width: 50%;
 }
 
 .parag {
-  width: 50%;
+  width: 35%;
   margin: 0;
-  margin-right: 10px;
-margin-left: auto;
+  margin-right: 15vw;
+  margin-top: 5vh;
+  margin-left: auto;
 }
 
 .mail {
@@ -40,11 +41,23 @@ margin-left: auto;
   text-decoration: underline;
 }
 
-.reseaux {
+.reseauxList {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 7vh;
 }
 
+.reseau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reseauName {
+  margin-left: 1.2vw;
+  text-decoration: underline;
+}
 .footerContainer {
   width: 100vw;
   border-top: 1px solid black;
@@ -57,4 +70,20 @@ margin-left: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.arrow {
+  margin-left: 2vw;
+  
+}
+
+.zindex {
+  position: relative;
+  z-index: 1;
+}
+.bottomCircle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
 }
