@@ -13,9 +13,7 @@ export default function Home({ projets }) {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    const isTriggered = () => {
-      console.log("trigger");
-    };
+    
     const tween = gsap.to(".horizontal", {
       xPercent: -(19 + (projets.length - 2) * 60),
       scrollTrigger: {

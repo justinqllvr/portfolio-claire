@@ -1,0 +1,47 @@
+.section {
+    margin-top: 15vh;
+}
+.aboutContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutDescription {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutImage {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.leftParagraphe, .rightParagraphe {
+    width: 50%;
+}
+
+.rightParagraphe {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.resume {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #FFFBF7;
+    padding: 10px 32px;
+    border: 1px solid #201B2F;
+    border-radius: 50px;
+}
+
+.resumeArrow {
+    margin-bottom: 0.01em;
+    padding-left: 12px;
+}
