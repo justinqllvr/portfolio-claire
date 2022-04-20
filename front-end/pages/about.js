@@ -20,14 +20,18 @@ function about() {
           <div className={styles.aboutContainer}>
             <div className={styles.aboutDescription}>
               <p className="p">
-              I'm Claire Rieusset, young student from Bordeaux, passionate about
-              webdesign and UX design. <br></br><br></br>
-              I'm currently studying for a Bachelor 3
-              Digital Project Manager at ESD Bordeaux. I'm passionate about the
-              web and more particularly about interactive design. I am
-              constantly exploring new creative techniques and new universes. <br></br>
-              I'm listening to all new opportunities, if you have a project, an
-              idea or a coffee, contact me !
+                {
+                  "I'm Claire Rieusset, young student from Bordeaux, passionate about webdesign and UX design."
+                }
+                <br></br>
+                <br></br>
+                {
+                  "I'm currently studying for a Bachelor 3 Digital Project Manager at ESD Bordeaux. I'm passionate about the web and more particularly about interactive design. I am constantly exploring new creative techniques and new universes."
+                }
+                <br></br>
+                {
+                  "I'm listening to all new opportunities, if you have a project, an idea or a coffee, contact me !"
+                }
               </p>
               <button className={`p ${styles.resume}`}>
                 <a rel="noreferrer" target={"_blank"} href={"/about"}>
@@ -57,7 +61,11 @@ function about() {
           <div className={styles.section}>
             <Title title={"WORK EXPERIENCES"} />
             <p className={`p ${styles.leftParagraphe}`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo, malesuada in elementum magnis in aliquam. Orci nunc odio sed fusce. Vulputate sem porta erat et nulla pharetra. Eu porta vitae ultrices ullamcorper ipsum sit donec. Lectus leo tincidunt ut egestas. Amet, elit proin duis morbi tincidunt. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo,
+              malesuada in elementum magnis in aliquam. Orci nunc odio sed
+              fusce. Vulputate sem porta erat et nulla pharetra. Eu porta vitae
+              ultrices ullamcorper ipsum sit donec. Lectus leo tincidunt ut
+              egestas. Amet, elit proin duis morbi tincidunt.
             </p>
             <p className={`p ${styles.rightParagraphe}`}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo,
