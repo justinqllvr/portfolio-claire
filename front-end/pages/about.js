@@ -98,11 +98,11 @@ function about() {
               }
             </p>
             <p className={`p ${styles.rightParagraphe}`}>
-              Thanks to this training, I discovered photography, video, web
+             {" Thanks to this training, I discovered photography, video, web
               development and my favorite field: interface design. With my HAD
               in my pocket, I joined ESD Bordeaux in a Bachelor's degree in
               digital project management with a digital creation option. And now
-              you know everything about Claire Rieusset.
+              you know everything about Claire Rieusset."}
             </p>
           </div>
         </Layout>
