@@ -20,14 +20,18 @@ function about() {
           <div className={styles.aboutContainer}>
             <div className={styles.aboutDescription}>
               <p className="p">
-              I'm Claire Rieusset, young student from Bordeaux, passionate about
-              webdesign and UX design. <br></br><br></br>
-              I'm currently studying for a Bachelor 3
-              Digital Project Manager at ESD Bordeaux. I'm passionate about the
-              web and more particularly about interactive design. I am
-              constantly exploring new creative techniques and new universes. <br></br>
-              I'm listening to all new opportunities, if you have a project, an
-              idea or a coffee, contact me !
+                {
+                  "I'm Claire Rieusset, young student from Bordeaux, passionate about webdesign and UX design."
+                }
+                <br></br>
+                <br></br>
+                {
+                  "I'm currently studying for a Bachelor 3 Digital Project Manager at ESD Bordeaux. I'm passionate about the web and more particularly about interactive design. I am constantly exploring new creative techniques and new universes."
+                }
+                <br></br>
+                {
+                  "I'm listening to all new opportunities, if you have a project, an idea or a coffee, contact me !"
+                }
               </p>
               <button className={`p ${styles.resume}`}>
                 <a rel="noreferrer" target={"_blank"} href={"/about"}>
@@ -57,39 +61,44 @@ function about() {
           <div className={styles.section}>
             <Title title={"WORK EXPERIENCES"} />
             <p className={`p ${styles.leftParagraphe}`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo, malesuada in elementum magnis in aliquam. Orci nunc odio sed fusce. Vulputate sem porta erat et nulla pharetra. Eu porta vitae ultrices ullamcorper ipsum sit donec. Lectus leo tincidunt ut egestas. Amet, elit proin duis morbi tincidunt. 
+              September 2021 rhymes with the beginning of my UX/UI design
+              internship at Mink. This experience allows me to play all day long
+              with the colors, the typographies and the interface of the
+              companies that trust my web agency. I think about the path that a
+              user will take when he visits our site, what is the typical
+              user...
             </p>
             <p className={`p ${styles.rightParagraphe}`}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo,
-              malesuada in elementum magnis in aliquam. Orci nunc odio sed
-              fusce. Vulputate sem porta erat et nulla pharetra. Eu porta vitae
-              ultrices ullamcorper ipsum sit donec. Lectus leo tincidunt ut
-              egestas. Amet, elit proin duis morbi tincidunt.{" "}
+              In parallel to my work-study at the web agency, I realize
+              freelance projects such as the creation of logos or posters for
+              individuals. Before this experience, I did two 3-month internships
+              as a visual content creator and web editor.
             </p>
           </div>
-          <div className={styles.section}>
+          {/* <div className={styles.section}>
             <Title title={"MY FAVORITE TOOLS"} />
-          </div>
+          </div> */}
         </Layout>
-      </Layout>
+        {/* </Layout>
       <div>Barre qui défile avec les expériences</div>
-      <Layout>
+      <Layout> */}
         <Layout>
           <div className={styles.section}>
             <Title title={"MY STUDIES"} />
             <p className={`p ${styles.leftParagraphe}`}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo,
-              malesuada in elementum magnis in aliquam. Orci nunc odio sed
-              fusce. Vulputate sem porta erat et nulla pharetra. Eu porta vitae
-              ultrices ullamcorper ipsum sit donec. Lectus leo tincidunt ut
-              egestas. Amet, elit proin duis morbi tincidunt.{" "}
+              After a semester in a preparatory class of economics (ENS
+              Paris-Saclay D2), I chose to reorient myself in my passions:
+              digital and design. <br></br>
+              {
+                "That's how I ended up in a HAD in Multimedia and Internet in Bordeaux."
+              }
+              <br></br>
+              {
+                "That's where I learned to become a real Swiss knife in the digital world."
+              }
             </p>
             <p className={`p ${styles.rightParagraphe}`}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo,
-              malesuada in elementum magnis in aliquam. Orci nunc odio sed
-              fusce. Vulputate sem porta erat et nulla pharetra. Eu porta vitae
-              ultrices ullamcorper ipsum sit donec. Lectus leo tincidunt ut
-              egestas. Amet, elit proin duis morbi tincidunt.{" "}
+             {" Thanks to this training, I discovered photography, video, web development and my favorite field: interface design. With my HAD in my pocket, I joined ESD Bordeaux in a Bachelor\'s degree in digital project management with a digital creation option. And now you know everything about Claire Rieusset."}
             </p>
           </div>
         </Layout>
