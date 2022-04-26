@@ -6,9 +6,10 @@ import arrow from "../public/assets/svg/arrow12px12px.svg";
 import Title from "../components/utils/title";
 import Footer from "../components/footer/footer";
 import claire from "../public/assets/png/claire.png";
+import { fetchAPI } from "../lib/api";
 import Layout from "../components/utils/layout";
 
-function about() {
+function about({ competences }) {
   return (
     <div>
       <Layout>
@@ -79,9 +80,14 @@ function about() {
             <Title title={"MY FAVORITE TOOLS"} />
           </div> */}
         </Layout>
-        {/* </Layout>
-      <div>Barre qui défile avec les expériences</div>
-      <Layout> */}
+      </Layout>
+      <div className={`competence-line ${styles.competences}`}>
+        {competences &&
+          competences[0].attributes.competences.map((competence) => (
+            <div key={competence.id}>{competence.competence} • </div>
+          ))}
+      </div>
+      <Layout>
         <Layout>
           <div className={styles.section}>
             <Title title={"MY STUDIES"} />
@@ -98,7 +104,9 @@ function about() {
               }
             </p>
             <p className={`p ${styles.rightParagraphe}`}>
-             {" Thanks to this training, I discovered photography, video, web development and my favorite field: interface design. With my HAD in my pocket, I joined ESD Bordeaux in a Bachelor\'s degree in digital project management with a digital creation option. And now you know everything about Claire Rieusset."}
+              {
+                " Thanks to this training, I discovered photography, video, web development and my favorite field: interface design. With my HAD in my pocket, I joined ESD Bordeaux in a Bachelor's degree in digital project management with a digital creation option. And now you know everything about Claire Rieusset."
+              }
             </p>
           </div>
         </Layout>
@@ -107,6 +115,18 @@ function about() {
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  // Run API calls in parallel
+  const res = await fetchAPI("/competences", { populate: "*" });
+
+  return {
+    props: {
+      competences: res.data,
+    },
+    revalidate: 1,
+  };
 }
 
 export default about;

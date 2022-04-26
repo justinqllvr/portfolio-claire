@@ -13,7 +13,10 @@
 }
 
 .graphic {
+  display: flex;
   margin-bottom: 14.5vh;
+  padding-bottom: 3vh;
+  overflow: hidden ;
 }
 
 .parag {
@@ -27,10 +30,17 @@
   width: 100%;
 }
 
-.welcomeText {
-  animation-duration: 1s;
-  transition: transform 1s cubic-bezier(0.4, 0, 0, 1);
-  animation-name: slidein;
+.arrow {
+  position: absolute;
+  transform: translate(100%, -200%);
+}
+
+.name {
+  transform: translate3d(0, 100%, 0);
+}
+
+.designer {
+  transform: translate3d(0, 125%, 0);
 }
 
 .zindex {
@@ -41,16 +51,44 @@
   position: absolute;
   z-index: auto;
 }
-.name {
+
+.animation1 {
   animation-duration: 1s;
   transition: transform 1s cubic-bezier(0.4, 0, 0, 1);
   animation-name: slidein;
 }
 
+.animation2 {
+  transform: translate3d(0, 0, 0);
+  animation-duration: 1s;
+  transition: transform 1s cubic-bezier(0.4, 0, 0, 1);
+  animation-name: slidein;
+}
+
+.animation3 {
+  transform: translate3d(0, 0, 0);
+  animation-duration: 1s;
+  transition: transform 1s cubic-bezier(0.4, 0, 0, 1);
+  animation-name: slidein;
+}
+
+.rotate {
+  animation: rotation 30s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 @keyframes slidein {
   from {
     will-change: transform;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 115%, 0);
   }
 
   to {
@@ -58,3 +96,4 @@
     will-change: transform;
   }
 }
+

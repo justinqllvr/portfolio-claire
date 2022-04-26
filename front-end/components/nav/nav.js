@@ -22,7 +22,15 @@ export default function Nav() {
       </Link>
       <div className={styles.links}>
         <Link href="/works">
-          <a>WORKS</a>
+          <a>
+            <div className={styles.menuItem}>
+              <span>W</span>
+              <span>O</span>
+              <span>R</span>
+              <span>K</span>
+              <span>S</span>
+            </div>
+          </a>
         </Link>
         <Link href="/lab">
           <a>LE LAB</a>
