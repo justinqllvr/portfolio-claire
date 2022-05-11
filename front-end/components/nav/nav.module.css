@@ -70,6 +70,10 @@
   transform: translateY(75%) rotateX(-90deg);
 }
 
+.lab {
+  display: none !important;
+}
+
 /* .menuItem:hover>span {
   transform:  translateY(-70%) rotateX(-90deg) ;
 } */

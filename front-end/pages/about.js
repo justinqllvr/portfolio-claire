@@ -81,12 +81,12 @@ function about({ competences }) {
           </div> */}
         </Layout>
       </Layout>
-      <div className={`competence-line ${styles.competences}`}>
+      {/* <div className={`competence-line ${styles.competences}`}>
         {competences &&
           competences[0].attributes.competences.map((competence) => (
             <div key={competence.id}>{competence.competence} • </div>
           ))}
-      </div>
+      </div> */}
       <Layout>
         <Layout>
           <div className={styles.section}>

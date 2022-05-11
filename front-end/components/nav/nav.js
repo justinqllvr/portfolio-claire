@@ -6,50 +6,86 @@ import { useEffect } from "react";
 
 export default function Nav() {
   useEffect(() => {
+    /////////// EFFET NAV ////////////
+    const arrayDivName = ["works", "lelab", "about"];
+    for (let k = 0; k < arrayDivName.length; k++) {
+      for (let i = 10 * k; i < 5 + 10 * k; i++) {
+        document.getElementById(
+          `index${i + 1}`
+        ).style.transitionDelay = `calc(.05s * ${i - k * 10})`;
+      }
 
-      /////////// EFFET NAV ////////////
-      const arrayDivName = ["works","lelab","about"]
-      for (let k = 0; k < arrayDivName.length; k++) {
-        for (let i = 10*k; i < 5+10*k; i++) {
-          document.getElementById(
-            `index${i + 1}`
-          ).style.transitionDelay = `calc(.05s * ${i - k*10})`;
-        }
+      for (let a = 6 + 10 * k; a < 11 + k * 10; a++) {
+        document.getElementById(
+          `index${a}`
+        ).style.transitionDelay = `calc(.05s * ${a - (6 + 10 * k)})`;
+      }
 
-        for (let a = 6+10*k; a < 11+k*10; a++) {
-          document.getElementById(
-            `index${a}`
-          ).style.transitionDelay = `calc(.05s * ${a - (6+10*k)})`;
-        }
+      document
+        .getElementById(`menu-nav-${arrayDivName[k]}`)
+        .addEventListener("mouseover", () => {
+          for (let i = k * 10; i < arrayDivName[k].length + k * 10; i++) {
+            document.getElementById(`index${i + 1}`).style.transform =
+              "translateY(-75%) rotateX(-90deg)";
+          }
+          for (let j = 6 + k * 10; j < 11 + k * 10; j++) {
+            document.getElementById(`index${j}`).style.transform =
+              "translateY(0) rotateX(0)";
+          }
+        });
 
-        document
-      .getElementById(`menu-nav-${arrayDivName[k]}`)
+      document
+        .getElementById(`menu-nav-${arrayDivName[k]}`)
+        .addEventListener("mouseleave", () => {
+          for (let i = k * 10; i < 5 + k * 10; i++) {
+            document.getElementById(`index${i + 1}`).style.transform =
+              "translateY(0) rotateX(0)";
+          }
+          for (let j = 6 + k * 10; j < 11 + k * 10; j++) {
+            document.getElementById(`index${j}`).style.transform =
+              "translateY(75%) rotateX(-90deg)";
+          }
+        });
+    }
+
+    /////////// CONTACT EFFET NAV ////////////
+    for (let i = 30; i < 39; i++) {
+      document.getElementById(
+        `index${i + 1}`
+      ).style.transitionDelay = `calc(.05s * ${i - 31})`;
+    }
+
+    for (let a = 38; a < 45; a++) {
+      document.getElementById(
+        `index${a}`
+      ).style.transitionDelay = `calc(.05s * ${a - 39})`;
+    }
+
+    document
+      .getElementById(`menu-nav-contact`)
       .addEventListener("mouseover", () => {
-        for (let i = k*10; i < arrayDivName[k].length+k*10; i++) {
+        for (let i = 30; i < 39; i++) {
           document.getElementById(`index${i + 1}`).style.transform =
             "translateY(-75%) rotateX(-90deg)";
         }
-        for (let j = 6+k*10; j < 11+k*10; j++) {
+        for (let j = 38; j < 45; j++) {
           document.getElementById(`index${j}`).style.transform =
             "translateY(0) rotateX(0)";
         }
       });
 
-      document
-      .getElementById(`menu-nav-${arrayDivName[k]}`)
+    document
+      .getElementById(`menu-nav-contact`)
       .addEventListener("mouseleave", () => {
-        for (let i = k*10; i < 5+k*10; i++) {
+        for (let i = 30; i < 39; i++) {
           document.getElementById(`index${i + 1}`).style.transform =
             "translateY(0) rotateX(0)";
         }
-        for (let j = 6+k*10; j < 11+k*10; j++) {
+        for (let j = 38; j < 45; j++) {
           document.getElementById(`index${j}`).style.transform =
             "translateY(75%) rotateX(-90deg)";
         }
       });
-      }
-
-      
   }, []);
 
   return (
@@ -109,8 +145,8 @@ export default function Nav() {
             </div>
           </a>
         </Link>
-        <Link href="/lab">
-          <a>
+        <Link  href="/lab">
+          <a className={styles.lab}>
             <div id="menu-nav-lelab">
               <div>
                 <span id="index11" className={styles.works}>
@@ -190,7 +226,56 @@ export default function Nav() {
           </a>
         </Link>
         <Link href="/contact">
-          <a>CONTACT</a>
+          <a>
+            <div id="menu-nav-contact">
+              <div>
+                <span id="index31" className={styles.works}>
+                  C
+                </span>
+                <span id="index32" className={styles.works}>
+                  O
+                </span>
+                <span id="index33" className={styles.works}>
+                  N
+                </span>
+                <span id="index34" className={styles.works}>
+                  T
+                </span>
+                <span id="index35" className={styles.works}>
+                  A
+                </span>
+                <span id="index36" className={styles.works}>
+                  C
+                </span>
+                <span id="index37" className={styles.works}>
+                  T
+                </span>
+              </div>
+              <div className={styles.hover_clone}>
+                <span id="index38" className={styles.works_clone}>
+                  C
+                </span>
+                <span id="index39" className={styles.works_clone}>
+                  O
+                </span>
+                <span id="index40" className={styles.works_clone}>
+                  N
+                </span>
+                <span id="index41" className={styles.works_clone}>
+                  T
+                </span>
+                <span id="index42" className={styles.works_clone}>
+                  A
+                </span>
+                <span id="index43" className={styles.works_clone}>
+                  C
+                </span>
+                <span id="index44" className={styles.works_clone}>
+                  T
+                </span>
+              </div>
+            </div>
+          </a>
         </Link>
       </div>
     </nav>
