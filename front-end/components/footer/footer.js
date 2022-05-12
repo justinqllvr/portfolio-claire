@@ -26,7 +26,9 @@ export default function Footer() {
             </div>
             <div className={styles.right}>
               <div className={styles.mail}>
-                <div className="mail">CLAIRERIEUSSET.PRO@GMAIL.COM</div>
+                <a href="mailto:clairerieusset.pro@gmail.com" className="mail">
+                  CLAIRERIEUSSET.PRO@GMAIL.COM
+                </a>
                 <div className={styles.arrow}>
                   <Image
                     src={arrow}
@@ -39,47 +41,100 @@ export default function Footer() {
               </div>
               <div className={`label ${styles.reseauxList}`}>
                 <div className={styles.reseau}>
-                  <Image
-                    src={instagram}
-                    width={40}
-                    height={40}
-                    layout="intrinsic"
-                    alt="arrow"
-                  ></Image>
-                  <a className={styles.reseauName}>Instagram</a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/clairieusset.design/"
+                  >
+                    <Image
+                      src={instagram}
+                      width={40}
+                      height={40}
+                      layout="intrinsic"
+                      alt="arrow"
+                    ></Image>
+                  </a>
+
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/clairieusset.design/"
+                    className={styles.reseauName}
+                  >
+                    Instagram
+                  </a>
                 </div>
                 <div className={styles.reseau}>
-                  <Image
-                    src={linkedin}
-                    width={40}
-                    height={40}
-                    layout="intrinsic"
-                    alt="arrow"
-                  ></Image>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/claire-rieusset-882633182/?originalSubdomain=fr"
+                  >
+                    <Image
+                      src={linkedin}
+                      width={40}
+                      height={40}
+                      layout="intrinsic"
+                      alt="arrow"
+                    ></Image>
+                  </a>
 
-                  <a className={styles.reseauName}>Linkedin</a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/claire-rieusset-882633182/?originalSubdomain=fr"
+                    className={styles.reseauName}
+                  >
+                    Linkedin
+                  </a>
                 </div>
                 <div className={styles.reseau}>
-                  <Image
-                    src={twitter}
-                    width={40}
-                    height={40}
-                    layout="intrinsic"
-                    alt="arrow"
-                  ></Image>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://twitter.com/clairieusset"
+                  >
+                    <Image
+                      src={twitter}
+                      width={40}
+                      height={40}
+                      layout="intrinsic"
+                      alt="arrow"
+                    ></Image>
+                  </a>
 
-                  <a className={styles.reseauName}>Twitter</a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://twitter.com/clairieusset"
+                    className={styles.reseauName}
+                  >
+                    Twitter
+                  </a>
                 </div>
                 <div className={styles.reseau}>
-                  <Image
-                    src={behance}
-                    width={40}
-                    height={40}
-                    layout="intrinsic"
-                    alt="arrow"
-                  ></Image>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.behance.net/clairerieusset1"
+                  >
+                    <Image
+                      src={behance}
+                      width={40}
+                      height={40}
+                      layout="intrinsic"
+                      alt="arrow"
+                    ></Image>
+                  </a>
 
-                  <a className={styles.reseauName}>Behance</a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.behance.net/clairerieusset1"
+                    className={styles.reseauName}
+                  >
+                    Behance
+                  </a>
                 </div>
               </div>
             </div>
