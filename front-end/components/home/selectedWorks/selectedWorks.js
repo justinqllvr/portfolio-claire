@@ -20,7 +20,7 @@ export default function SelectedWorks({ projets }) {
         <div className={styles.projectsContainer}>
           {projets &&
             projets.map((projet, i) => (
-              <Link key={i} href={`/projets/${projet.id}`}>
+              <Link key={i} href={`/works/${projet.id}`}>
                 <a className={styles.projet} >
                     <Image
                       layout="intrinsic"

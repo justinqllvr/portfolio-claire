@@ -14,7 +14,7 @@ import ThreeColumn from "../../components/projet/threeColumn";
 import arrow from "../../public/assets/svg/arrow12px12px.svg";
 import Paragraphe from "../../components/projet/paragraphe";
 
-const Projets = ({ projet }) => {
+const Works = ({ projet }) => {
   const [descriptionArray, setDescriptionArray] = useState([]);
 
   useEffect(() => {
@@ -175,4 +175,4 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default Projets;
+export default Works;

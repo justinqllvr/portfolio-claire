@@ -22,7 +22,7 @@ function WorkCard({ projet, index, component }) {
 
   return (
     <div id={`pair${index}`} className={`wrapperCard ${styles.wrapper}`}>
-      <Link href={`/projets/${projet.id}`}>
+      <Link href={`/works/${projet.id}`}>
         <a>
           <div id="imageWidth" className={styles.image}>
             <Image
