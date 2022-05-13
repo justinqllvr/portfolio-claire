@@ -18,7 +18,7 @@ function WorkCard({ projet, index, component }) {
     if (component === "work-card") {
       numIsPair(index);
     }
-  }, [index]);
+  }, [index, component]);
 
   return (
     <div id={`pair${index}`} className={`wrapperCard ${styles.wrapper}`}>
@@ -35,7 +35,7 @@ function WorkCard({ projet, index, component }) {
             />
           </div>
           <div className={styles.roles}>
-            {projet.attributes.role.map(({ role }, i) => (
+            {projet.attributes?.role.map(({ role }, i) => (
               <span className={`label`} key={i}>
                 {role?.toUpperCase()} •{" "}
               </span>

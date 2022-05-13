@@ -34,7 +34,7 @@ function about({ competences }) {
                   "I'm listening to all new opportunities, if you have a project, an idea or a coffee, contact me !"
                 }
               </p>
-              <button className={`p ${styles.resume}`}>
+              {/* <button className={`p ${styles.resume}`}>
                 <a rel="noreferrer" target={"_blank"} href={"/about"}>
                   EXPLORE MY RESUME
                 </a>
@@ -47,7 +47,7 @@ function about({ competences }) {
                     alt="arrow"
                   ></Image>
                 </div>
-              </button>
+              </button> */}
             </div>
             <div className={styles.aboutImage}>
               <Image
