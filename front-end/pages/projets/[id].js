@@ -122,16 +122,16 @@ const Projets = ({ projet }) => {
             </div>
           </button>
         </div>
-        {projet.galerie?.map((component) => {
+        {projet.galerie?.map((component, i) => {
           switch (component.__component.split(".")[1]) {
             case "one-media":
-              return <OneMedia data={component} />;
+              return <OneMedia key={i} data={component} />;
             case "two-column":
-              return <TwoColumn data={component} />;
+              return <TwoColumn key={i} data={component} />;
             case "three-column":
-              return <ThreeColumn data={component} />;
+              return <ThreeColumn key={i} data={component} />;
             case "paragraphe":
-              return <Paragraphe data={component} />;
+              return <Paragraphe key={i} data={component} />;
             default:
               console.log(`:()`);
           }

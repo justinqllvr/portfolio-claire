@@ -37,7 +37,7 @@ function WorkCard({ projet, index, component }) {
           <div className={styles.roles}>
             {projet.attributes.role.map(({ role }, i) => (
               <span className={`label`} key={i}>
-                {role.toUpperCase()} •{" "}
+                {role?.toUpperCase()} •{" "}
               </span>
             ))}
           </div>
